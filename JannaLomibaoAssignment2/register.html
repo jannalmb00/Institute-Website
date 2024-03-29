@@ -14,10 +14,57 @@
     <ul>
       <li><a href="home.html">HOME</a></li>
       <li><a href="course.html">COURSES</a></li>
-      <span class="span-register"><li><a href="register.html">REGISTER NOW</a></li></span>
+      <li class="register-con"><a href="register.html">REGISTER NOW</a></li>
     </ul>
   </nav>
+  <header id="header-register">
+    <h1>Register</h1>
+  </header>
   <main>
+
+    <section id="flex-register">
+      <div>
+        <img src="images/ecommerce.jpeg">
+        <div class="price">$295</div>
+        <h3>Introduction of E-commerce</h3>
+      </div>
+      <div>
+        <img src="images/futureWeb.jpeg">
+        <div class="price">$295</div>
+        <h3>The Future of the Web</h3>       
+      </div>
+      <div>
+        <img src="images/webprog.webp">
+        <div class="price">$395</div>
+        <h3>Web Programming</h3>      
+      </div>
+      <div>
+        <img src="images/network.avif">
+        <div class="price">$395</div>
+        <h3>Network Security</h3>        
+      </div>
+    </section>
+
+    <form id="form-register">
+      <fieldset>
+        <legend>Workshops</legend>
+        <input type="radio" id="course1" name="course" >
+        <label for="course1">Introduction of E-commerce</label><br>
+        <input type="radio" id="course2" name="course" >
+        <label for="course2">The Future of the Web</label><br>
+        <input type="radio" id="course3" name="course" >
+        <label for="course3">Web Programmin</label><br>
+        <input type="radio" id="course4" name="course" >
+        <label for="course4">Network Securit</label><br>
+      </fieldset>
+
+      <input type="checkbox" id="dinnerNight" name="dinnerNight">
+      <label for="dinnerNight">Opening Night Dinner ($30)</label><br><br>
+
+      <input type="button" id="calculate" name="calculate" value="Calculate"><br><br>
+
+      <label for="totalFee">Total Fee: &nbsp;</label><input type="text" id="total" name="total"><br>
+    </form><br>
 
   </main>
   <footer>
