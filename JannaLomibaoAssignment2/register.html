@@ -45,25 +45,25 @@
       </div>
     </section>
 
-    <form id="form-register">
+    <form id="form-register"  onsubmit="calculate(event)" >
       <fieldset>
         <legend>Workshops</legend>
-        <input type="radio" id="course1" name="course" >
+        <input type="radio" id="course1" name="course" value="295">
         <label for="course1">Introduction of E-commerce</label><br>
-        <input type="radio" id="course2" name="course" >
+        <input type="radio" id="course2" name="course" value="295">
         <label for="course2">The Future of the Web</label><br>
-        <input type="radio" id="course3" name="course" >
+        <input type="radio" id="course3" name="course" value="395">
         <label for="course3">Web Programmin</label><br>
-        <input type="radio" id="course4" name="course" >
+        <input type="radio" id="course4" name="course"value="395" >
         <label for="course4">Network Securit</label><br>
       </fieldset>
 
       <input type="checkbox" id="dinnerNight" name="dinnerNight">
       <label for="dinnerNight">Opening Night Dinner ($30)</label><br><br>
 
-      <input type="button" id="calculate" name="calculate" value="Calculate"><br><br>
+      <input type="submit" id="calculate" name="calculate" value="Calculate" ><br><br>
 
-      <label for="totalFee">Total Fee: &nbsp;</label><input type="text" id="total" name="total"><br>
+      <label for="totalFee">Total Fee: </label><div id="totalFee"></div><br>
     </form><br>
 
   </main>
@@ -86,6 +86,6 @@
       </p>
     </div>
   </footer>
-  
+<script src="script.js"></script>
 </body>
 </html>
