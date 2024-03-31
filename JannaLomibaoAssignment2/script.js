@@ -1,44 +1,37 @@
 
-//function calculate(){
-  //var course = document.getElementsByName("course");
-  //var total = 0;
+function calculateClick(){
+  var form = document.getElementById("form-register");
+  var radioInputs = form.querySelectorAll('input[type="radio"]');
+  const n = radioInputs.length;
+  var totalFee = 0;
 
-  //for(let i = 0; i < course.length; i++){
-    //if(course[i].checked){
-      //let p = parseInt(course[i].value);
-      //total += p;
-    //}
-  //}
-
-  //var dinnerAdd = document.getElementById("dinnerNight");
-  //if(dinnerAdd.checked){
-    //total += 30;
-  //}
-
- // var totalDisplay = document.getElementById("totalFee");
-  //totalDisplay.value = "$" + total;
-
-//}
-
-function calculate() {
-  event.preventDefault();
-  var course = document.getElementsByName("course");
-  var total = 0;
-  var additional = document.getElementById("dinnerNight");
-  console.log(total);
-
-  for (let i = 0; i < course.length; i++) {
-    if (course[i].checked) {
-      let p = parseInt(course[i].value);
-      total += p;
+  for(let i = 0 ;i < n; i++){
+   // alert(radioInputs[i]);
+    if(radioInputs[i].checked){
+     // alert(radioInputs[i].value);
+      totalFee += parseInt(radioInputs[i].value);
     }
   }
-
-  // Add additional cost for dinner night if selected
-  if (additional.checked) {
-    total += 30;
+  var dinnerInclu = document.getElementById("dinnerNight");
+  if(dinnerInclu.checked){
+    //alert(dinnerInclu.value);
+    totalFee += 30;
   }
-console.log(total);
-  // Display the total in the "totalFee" input field
-  document.getElementById("totalFee").innerHTML = "$" +total;
+  var totalShow = document.getElementById("totalDisplay");
+  //alert(totalShow != null);
+
+  if(totalShow != null){
+    totalShow.remove();
+  }
+
+  //create an element of label 
+  var totalFeeDisplay = document.createElement("input");
+  totalFeeDisplay.id = "totalDisplay";
+  totalFeeDisplay.name = "totalDisplay";
+  totalFeeDisplay.type = "text";
+  totalFeeDisplay.setAttribute("value", "$" + totalFee+ ".00");
+
+  //append
+  form.appendChild(totalFeeDisplay); 
+
 }

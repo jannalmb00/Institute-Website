@@ -45,7 +45,7 @@
       </div>
     </section>
 
-    <form id="form-register"  onsubmit="calculate(event)" >
+    <form id="form-register" >
       <fieldset>
         <legend>Workshops</legend>
         <input type="radio" id="course1" name="course" value="295">
@@ -58,12 +58,13 @@
         <label for="course4">Network Securit</label><br>
       </fieldset>
 
-      <input type="checkbox" id="dinnerNight" name="dinnerNight">
+      <input type="checkbox" id="dinnerNight" name="dinnerNight" value="30">
       <label for="dinnerNight">Opening Night Dinner ($30)</label><br><br>
 
-      <input type="submit" id="calculate" name="calculate" value="Calculate" ><br><br>
+      <input type="button" name="calculateBtn" id="calculateBtn" value="Calculate" onclick="calculateClick()" size="100px"><br><br>
 
-      <label for="totalFee">Total Fee: </label><div id="totalFee"></div><br>
+      <label for="totalFee">Total Fee: </label>
+      
     </form><br>
 
   </main>
