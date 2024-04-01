@@ -87,6 +87,15 @@ nav a:hover{color:#CD611E;}
   font-size: 1.2rem;
   line-height: 1.4;
 }
+#main-home table{
+  border-collapse: collapse;
+  border: #CD611E;
+  margin: 3%;
+  width: 100%;
+}
+table td{
+  padding: 1%;
+}
 #main-home img{
   width: 100%;
   object-position: center;
