@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
+  <nav class="depth">
     <ul>
       <li><a href="home.html">HOME</a></li>
       <li><a href="course.html">COURSES</a></li>
@@ -23,29 +23,29 @@
   <main>
 
     <section id="flex-register">
-      <div>
+      <div class="depth">
         <img src="images/ecommerce.jpeg">
         <div class="price">$295</div>
         <h3>Introduction of E-commerce</h3>
       </div>
-      <div>
+      <div class="depth">
         <img src="images/futureWeb.jpeg">
         <div class="price">$295</div>
         <h3>The Future of the Web</h3>       
       </div>
-      <div>
+      <div class="depth">
         <img src="images/webprog.webp">
         <div class="price">$395</div>
         <h3>Web Programming</h3>      
       </div>
-      <div>
+      <div class="depth">
         <img src="images/network.avif">
         <div class="price">$395</div>
         <h3>Network Security</h3>        
       </div>
     </section>
 
-    <form id="form-register" >
+    <form id="form-register" class="depth" >
       <fieldset>
         <legend>Workshops</legend>
         <input type="radio" id="course1" name="course" value="295">
@@ -61,14 +61,14 @@
       <input type="checkbox" id="dinnerNight" name="dinnerNight" value="30">
       <label for="dinnerNight">Opening Night Dinner ($30)</label><br><br>
 
-      <input type="button" name="calculateBtn" id="calculateBtn" value="Calculate" onclick="calculateClick()" size="100px"><br><br>
+      <input type="button" class="btn" name="calculateBtn" id="calculateBtn" value="Calculate" onclick="calculateClick()" size="100px"><br><br>
 
       <label for="totalFee">Total Fee: </label>
       
     </form><br>
 
   </main>
-  <footer>
+  <footer class="depth">
     <div>
       <h3><span>XYZ</span> Educators</h3>
     </div>
